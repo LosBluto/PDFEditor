@@ -1,4 +1,4 @@
-package tools;
+package cn.losbluto.pdfeditor.tools;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -31,6 +31,14 @@ public class ThreadUtil {
 
     public static void execute(Runnable runnable) {
         executor.execute(runnable);
+    }
+
+    public static void await(long timeout) {
+        try {
+            executor.awaitTermination(timeout, TimeUnit.SECONDS);
+        }catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void shutdown(){

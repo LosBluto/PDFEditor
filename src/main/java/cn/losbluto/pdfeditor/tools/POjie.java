@@ -1,4 +1,4 @@
-package tools;
+package cn.losbluto.pdfeditor.tools;
 
 import javassist.*;
 
@@ -12,7 +12,7 @@ import com.aspose.pdf.*;
  * @author
  * @version 1.0.0
  * @ClassName POjie.java
- * @Description TODO
+ * @Description TODO 破解修改aspose验证的字节码
  * @createTime 2022年06月11日 10:06:00
  */
 public class POjie {
